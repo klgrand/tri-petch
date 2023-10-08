@@ -8,11 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        roboto: ["var(--roboto-font)"]
       },
+      screens: {
+        "sm": { "min": "120px"}
+      },
+      colors: {
+        "primary-gray": {
+          DEFAULT: "#F5F4F9"
+        },
+        "primary-purple": {
+          DEFAULT: "#5E3DB3"
+        },
+        "primary-blue": {
+          DEFAULT: "#090C35"
+        },
+        "title-color": "#C2C2C2",
+        "header-color": "#E7E7E7"
+      }
     },
   },
   plugins: [],
