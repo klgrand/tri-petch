@@ -117,6 +117,12 @@
   }
 }
 
+@media only screen and (max-device-width: 300px) {
+  * {
+    display: none;
+  }
+}
+
 .swiper {
   @apply relative flex align-top md:flex-col md:w-full flex-row w-full
 }
