@@ -1,11 +1,12 @@
-import SportContent from "@/components/SportContent"
+import React from 'react';
+import SportContent from '@/components/SportContent';
 
-const Home = () => {
+function Home() {
   return (
     <main>
       <SportContent />
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;

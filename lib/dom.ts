@@ -1,3 +1,1 @@
-export function getTouchEventData(e: TouchEvent | MouseEvent | React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>) {
-  return 'changedTouches' in e ? e.changedTouches[0] : e
-}
+export default (e: TouchEvent | React.TouchEvent<HTMLDivElement>) => ('changedTouches' in e ? e.changedTouches[0] : e);

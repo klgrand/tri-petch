@@ -1,6 +1,7 @@
-import { TittleBulletProps } from "@/types"
+import React from 'react';
+import { TittleBulletProps } from '@/types';
 
-const TittleBullet = ({ text, underscoreStyles = "", textStyle = "" }: TittleBulletProps) => {
+function TittleBullet({ text, underscoreStyles = '', textStyle = '' }: TittleBulletProps) {
   return (
     <div className="text__bullet-container">
       <div className={`text__bullet ${textStyle}`}>
@@ -8,7 +9,7 @@ const TittleBullet = ({ text, underscoreStyles = "", textStyle = "" }: TittleBul
       </div>
       <div className={`underscore-line border-radis rounded-[2.5px] bg-primary-purple ${underscoreStyles}`} />
     </div>
-  )
+  );
 }
 
-export default TittleBullet
+export default TittleBullet;
