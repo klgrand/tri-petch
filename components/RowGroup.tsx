@@ -35,7 +35,7 @@ function RowGroup({ rows }: RowGroupProps) {
     };
   }, []);
 
-  const onTouchMove = (e: TouchEvent) => {
+  const onTouchMove = (e: TouchEvent | MouseEvent) => {
     const currentX = getTouchEventData(e).clientX;
     const diff = getRefValue(startXRef) - currentX;
     let newOffsetX = getRefValue(currentOffsetXRef) - diff;
@@ -77,9 +77,11 @@ function RowGroup({ rows }: RowGroupProps) {
 
     window.removeEventListener('touchmove', onTouchMove);
     window.removeEventListener('touchend', onTouchEnd);
+    window.removeEventListener('mousemove', onTouchMove);
+    window.removeEventListener('mouseup', onTouchEnd);
   };
 
-  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+  const onTouchStart = (e: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLElement>) => {
     currentOffsetXRef.current = getRefValue(offsetXRef);
     startXRef.current = getTouchEventData(e).clientX;
 
@@ -91,6 +93,8 @@ function RowGroup({ rows }: RowGroupProps) {
 
     window.addEventListener('touchmove', onTouchMove);
     window.addEventListener('touchend', onTouchEnd);
+    window.addEventListener('mousemove', onTouchMove);
+    window.addEventListener('mouseup', onTouchEnd);
   };
 
   const indicatorOnClick = (idx: number) => {
@@ -102,7 +106,8 @@ function RowGroup({ rows }: RowGroupProps) {
   };
 
   return (
-    <div className="swiper" onTouchStart={onTouchStart}>
+    // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+    <div className="swiper" onTouchStart={onTouchStart} onMouseDown={onTouchStart}>
       <div className="swiper-container" ref={containerRef}>
         {
           rows?.map((row) => (
