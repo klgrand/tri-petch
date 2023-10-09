@@ -9,7 +9,7 @@ function RowContent({
     <div className={`flex md:w-full w-screen justify-between ${reverse ? 'flex-row-reverse' : ''} ${bgColor}`} key={title}>
       <div className="sm:hidden md:block lg:basis-1/2 md:basis-4/12 sm:basis-0" />
       <div className={`lg:basis-1/2 md:basis-8/12 basis-full ${contentContainerStyle}`}>
-        <div className="w-full">
+        <div className="w-full sm:select-none md:select-auto">
           <div className="text__title-container">
             {bulletText && (
             <TittleBullet
