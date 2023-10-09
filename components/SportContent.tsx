@@ -38,7 +38,7 @@ const leftContent: RowContentProps[] = [
     bulletText: '01',
     bgColor: 'md:bg-white bg-primary-gray',
     textDescriptionStyle: 'md:leading-[28px] lg:max-w-[571px] md:max-w-[432px]',
-    contentContainerStyle: 'lg:pl-[321px] lg:pb-[69px] md:pl-[33px] md:pb-[10px] md:pt-0 pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
+    contentContainerStyle: 'xl:pl-[100px] 2xl:pl-[321px] lg:pb-[69px] md:pl-[33px] md:pb-[10px] md:pt-0 pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
   },
   {
     reverse: true,
@@ -47,7 +47,7 @@ const leftContent: RowContentProps[] = [
     bulletText: '02',
     bgColor: 'bg-primary-gray',
     textDescriptionStyle: 'md:leading-[28px] lg:w-[717px] md:w-[432px]',
-    contentContainerStyle: 'lg:pl-[322px] lg:pb-[102px] lg:pt-[52px] md:pl-[33px] md:pb-[65px] md:pt-[51px] pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
+    contentContainerStyle: 'xl:pl-[100px] 2xl:pl-[322px] lg:pb-[102px] lg:pt-[52px] md:pl-[33px] md:pb-[65px] md:pt-[51px] pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
   },
   {
     reverse: true,
@@ -55,7 +55,7 @@ const leftContent: RowContentProps[] = [
     description: 'Save your time, recruit proper athlets for your team.',
     bulletText: '03',
     bgColor: 'md:bg-primary-blue bg-primary-gray',
-    contentContainerStyle: 'lg:pl-[323px] lg:pb-[62px] lg:pt-[93px] md:pl-[33px] md:pb-[72px] md:pt-[44px] pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
+    contentContainerStyle: 'xl:pl-[100px] 2xl:pl-[323px] lg:pb-[62px] lg:pt-[93px] md:pl-[33px] md:pb-[72px] md:pt-[44px] pl-[18px] pr-[18px] pt-[72px] custom__desktop-left-content',
     textDescriptionStyle: 'md:text-white leading-[28px] lg:w-[717px] md:w-[455px]',
     bulletTitleStyle: 'md:bg-white',
     textBulletStyle: 'text-[#8765DD]',
@@ -129,7 +129,7 @@ function SportContent() {
         <RowHeader
           header="PLAYERS"
           reverse
-          contentContainerStyle="lg:pl-[321px] lg:pb-[68px] lg:pt-[124px] md:pl-[31px] md:pb-[32px] md:pt-[51px] pl-[19px] pb-[237px] pt-[19px] custom__desktop-left-content"
+          contentContainerStyle="xl:pl-[100px] 2xl:pl-[321px] lg:pb-[68px] lg:pt-[124px] md:pl-[31px] md:pb-[32px] md:pt-[51px] pl-[19px] pb-[237px] pt-[19px] custom__desktop-left-content"
         />
         <RowGroup rows={leftContent} />
       </div>

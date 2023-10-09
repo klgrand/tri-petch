@@ -48,7 +48,7 @@
 }
 
 .image__right_content_desktop {
-  @apply absolute w-[678px] h-[950px] left-[175px] top-[35px] custom__desktop-image sm:hidden lg:flex
+  @apply absolute lg:w-[678px] lg:h-[950px] lg:left-[-100px] xl:left-[175px] top-[35px] sm:hidden lg:flex custom__desktop-image
 }
 
 .image__right_content_tablet {
@@ -70,7 +70,7 @@
 }
 
 .image__left_content_desktop {
-  @apply absolute w-[991px] h-[815px] right-[125px] custom__desktop-image-right sm:hidden lg:flex
+  @apply absolute w-[991px] h-[815px] lg:right-[-400px] xl:right-[-200px] 2xl:right-[125px] custom__desktop-image-right sm:hidden lg:flex
 }
 
 .image__left_content_tablet {

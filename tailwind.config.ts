@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -9,26 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["var(--roboto-font)"]
+        roboto: ['var(--roboto-font)'],
       },
       screens: {
-        "sm": { "min": "120px"}
+        sm: { min: '120px' },
+        '2xl': { min: '1780px' },
       },
       colors: {
-        "primary-gray": {
-          DEFAULT: "#F5F4F9"
+        'primary-gray': {
+          DEFAULT: '#F5F4F9',
         },
-        "primary-purple": {
-          DEFAULT: "#5E3DB3"
+        'primary-purple': {
+          DEFAULT: '#5E3DB3',
         },
-        "primary-blue": {
-          DEFAULT: "#090C35"
+        'primary-blue': {
+          DEFAULT: '#090C35',
         },
-        "title-color": "#C2C2C2",
-        "header-color": "#E7E7E7"
-      }
+        'title-color': '#C2C2C2',
+        'header-color': '#E7E7E7',
+      },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
